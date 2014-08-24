@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="test" Database="/cppprogram/experiment/test/.codelite/test.tags">
-  <Project Name="cpptest" Path="cpptest/cpptest.project" Active="Yes"/>
+  <Project Name="cpptest" Path="cpptest/cpptest.project" Active="No"/>
+  <Project Name="link" Path="link/link.project" Active="No"/>
+  <Project Name="vv" Path="vv/vv.project" Active="No"/>
+  <Project Name="cc" Path="cc/cc.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="cpptest" ConfigName="Debug"/>
+      <Project Name="link" ConfigName="Debug"/>
+      <Project Name="vv" ConfigName="Debug"/>
+      <Project Name="cc" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="cpptest" ConfigName="Release"/>
+      <Project Name="link" ConfigName="Release"/>
+      <Project Name="vv" ConfigName="Release"/>
+      <Project Name="cc" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
