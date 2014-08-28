@@ -3,19 +3,21 @@
   <Project Name="cpptest" Path="cpptest/cpptest.project" Active="No"/>
   <Project Name="link" Path="link/link.project" Active="No"/>
   <Project Name="vv" Path="vv/vv.project" Active="No"/>
-  <Project Name="cc" Path="cc/cc.project" Active="Yes"/>
+  <Project Name="quicksort" Path="quicksort/quicksort.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="cpptest" ConfigName="Debug"/>
       <Project Name="link" ConfigName="Debug"/>
       <Project Name="vv" ConfigName="Debug"/>
       <Project Name="cc" ConfigName="Debug"/>
+      <Project Name="quicksort" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="cpptest" ConfigName="Release"/>
       <Project Name="link" ConfigName="Release"/>
       <Project Name="vv" ConfigName="Release"/>
       <Project Name="cc" ConfigName="Release"/>
+      <Project Name="quicksort" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

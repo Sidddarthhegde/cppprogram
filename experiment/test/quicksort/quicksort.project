@@ -1,0 +1,58 @@
+#include<stdio.h>
+
+int main()
+{
+
+	int n,low,high,a[10],ke;
+	printf("enter no of elements");
+	scanf("%d",&n);
+	
+	
+	printf("enter array elements");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+k=partition (int,int);
+	quicksort(int,int);
+	printf("output array is \n");
+	for(i=0;i<n;i++)
+	printf("%d",a[i]);
+}
+
+int partition(int low,int high)
+{
+	int i,j,key,temp;
+	key=a[low];
+	i=low;
+	j=high+1;
+	while(i<=j)
+	{
+		do
+			i++;
+			while(key>=a[i])
+			do 
+			   j=j--;
+			   while(key<a[j])
+			   
+			   if(i<j) 
+			   temp=a[i];
+			   a[i]=a[j];
+			   a[j]=temp;
+	}
+	temp=a[low];
+	a[low]=a[j];
+	a[j]=temp;
+	
+	return j;
+}
+
+int quicksort(int low,int high)
+{
+	int mid;
+	if(low>high)
+	return;
+	mid=partition(low,high);
+	quicksort(low,mid-1);
+	quicksort(mid+1,high);
+}
+
+	
